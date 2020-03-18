@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.4",
+    "element-ui": "^2.13.0",
     "vue": "^2.6.11",
     "vue-router": "^3.1.5"
   },
@@ -60,8 +61,7 @@
       },
       "postcss-cssnext": {},
       "postcss-px-to-viewport": {
-        "viewportWidth": 750,
-        "viewportHeight": 1334,
+        "viewportWidth": 1200,
         "unitPrecision": 3,
         "viewportUnit": "vw",
         "selectorBlackList": [
@@ -69,7 +69,7 @@
           ".hairlines"
         ],
         "minPixelValue": 1,
-        "mediaQuery": false
+        "mediaQuery": true
       },
       "postcss-viewport-units": {},
       "cssnano": {
