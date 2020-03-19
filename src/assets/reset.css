@@ -5,6 +5,9 @@
 a, a:hover {
   text-decoration: none;
 }
+ul,li {
+  list-style: none;
+}
 .btn-default {
   color: #333;
 }

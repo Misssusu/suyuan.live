@@ -1,21 +1,93 @@
 <template>
-  <div class="navBar">
+  <div class="navBar" :class="showNav? 'showNav': ''">
     <nav>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>My Works</li>
-        <li>Blog</li>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#my works">My Works</a>
+        </li>
+        <li>
+          <a href="#blog">Blog</a>
+        </li>
       </ul>
     </nav>
   </div>
 </template>
 <script>
   export default {
-    name: 'NavBar'
+    name: 'NavBar',
+    mounted() {
+      window.addEventListener('scroll',this.handelScroll)
+    },
+    destroyed() {
+      window.removeEventListener('scroll',this.handelScroll)
+    },
+    data(){
+      return {
+        showNav: false,
+        scrollTop: 0
+      }
+    },
+    methods: {
+      handelScroll(){
+        this.scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+        this.showNav = this.scrollTop > 0;
+      }
+    }
   }
 </script>
-<style>
+<style lang="scss" scoped>
+  .navBar {
+    padding: 0 15px;
+    position: fixed;
+    background: #ffffff;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.4s ease-in-out;
+    nav {
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        li {
+          padding: 15px 0;
+          a:hover {
+            color: #a4c639;
+            background-color: transparent;
+          }
+          a {
+            color: #202020;
+            font-weight: 700;
+            line-height: 38px;
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+  }
+  .navBar.showNav {
+    opacity: 1;
+  }
 
+
+  @media (min-width: 768px) {
+    .navBar {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .navBar {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .navBar {
+      width: 1170px;
+    }
+  }
 </style>
 
