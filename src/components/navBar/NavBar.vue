@@ -31,8 +31,7 @@
       return {
         showNav: false,
         scrollTop: 0
-      }
-    },
+      }    },
     methods: {
       handelScroll(){
         this.scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
