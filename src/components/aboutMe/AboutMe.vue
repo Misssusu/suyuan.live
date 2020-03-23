@@ -52,6 +52,16 @@
         padding-bottom: 16px;
       }
     }
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translateX(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
     .row-right {
       /*float: right;*/
       /*height: 100%;*/
@@ -66,6 +76,8 @@
         box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
         padding: 60px;
         text-align: left;
+        animation: 1s ease-in fadeInRight;
+        /*animation: 1s ease-in fadeInRight;*/
         h1 {
           font-weight: bold;
           font-size: 36px;
@@ -80,6 +92,7 @@
       }
     }
   }
+
   @media (min-width: 768px) {
     .about-container {
       width: 750px;

@@ -21,23 +21,9 @@
 <script>
   export default {
     name: 'NavBar',
-    mounted() {
-      window.addEventListener('scroll',this.handelScroll)
-    },
-    destroyed() {
-      window.removeEventListener('scroll',this.handelScroll)
-    },
-    data(){
-      return {
-        showNav: false,
-        scrollTop: 0
-      }    },
-    methods: {
-      handelScroll(){
-        this.scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-        this.showNav = this.scrollTop > 0;
-      }
-    }
+    props: [
+      'showNav'
+    ]
   }
 </script>
 <style lang="scss" scoped>
