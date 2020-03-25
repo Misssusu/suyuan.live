@@ -34,6 +34,7 @@
     opacity: 0;
     z-index: 1;
     transition: all 0.4s ease-in-out;
+    box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
     nav {
       ul {
         display: flex;

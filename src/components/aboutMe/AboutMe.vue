@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="about" id="about">
     <div class="about-container">
       <div class="row">
         <div class="row-left">
@@ -27,6 +27,7 @@
 <style scoped lang="scss">
   .about {
     padding: 80px 0;
+    transition: all 0.4s ease-in-out;
   }
   .about-container {
     padding: 0 15px;
