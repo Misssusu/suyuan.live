@@ -3,10 +3,10 @@
     <nav>
       <ul>
         <li>
-          <a href="#home">Home</a>
+          <a @click="$emit('scrollTo','home')">Home</a>
         </li>
         <li>
-          <a href="#about">About</a>
+          <a  @click="$emit('scrollTo','about')">About</a>
         </li>
         <li>
           <a href="#my works">My Works</a>
@@ -46,6 +46,7 @@
             background-color: transparent;
           }
           a {
+            cursor: pointer;
             color: #202020;
             font-weight: 700;
             line-height: 38px;
