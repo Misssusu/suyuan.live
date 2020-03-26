@@ -32,6 +32,7 @@
   .about-container {
     padding: 0 15px;
     margin: 0 auto;
+    box-sizing: border-box;
   }
   .clearfix:after {
     content: '';
