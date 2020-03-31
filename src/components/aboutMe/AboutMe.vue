@@ -44,7 +44,6 @@
     justify-content: center;
     margin: 0 15px;
     .row-left {
-      /*float: left;*/
       padding: 0 15px;
       img {
         width: 100%;
