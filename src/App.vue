@@ -17,5 +17,6 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #333;
+    overflow-x: hidden;
   }
 </style>
