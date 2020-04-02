@@ -28,7 +28,6 @@
 <style scoped lang="scss">
   .about {
     padding: 80px 0;
-    transition: all 0.4s ease-in-out;
   }
 
   .about-container {
@@ -50,6 +49,7 @@
 
     .row-left {
       padding: 0 15px;
+      opacity: 0;
 
       img {
         width: 100%;
@@ -60,25 +60,12 @@
         padding-bottom: 16px;
       }
     }
-
-    /*@keyframes fadeInRight {*/
-    /*  from {*/
-    /*    opacity: 0;*/
-    /*    transform: translateX(20px);*/
-    /*  }*/
-    /*  to {*/
-    /*    opacity: 1;*/
-    /*    transform: translateX(0);*/
-    /*  }*/
-    /*}*/
     .row-right {
       display: flex;
       align-items: center;
-      /*.row-right-container.active {*/
-      /*  animation: 1s ease-in fadeInRight;*/
-      /*}*/
 
       .row-right-container {
+        opacity: 0;
         height: 300px;
         width: 100%;
         background: #ffffff;
@@ -86,7 +73,6 @@
         box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
         padding: 60px;
         text-align: left;
-        /*animation: 1s ease-in fadeInRight;*/
         h1 {
           font-weight: bold;
           font-size: 36px;

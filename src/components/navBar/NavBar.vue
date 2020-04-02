@@ -20,7 +20,7 @@
 </template>
 <script>
   export default {
-    name: 'NavBar',
+    name: 'navbar',
     props: [
       'showNav'
     ]
