@@ -2,12 +2,12 @@
   <div class="about" id="about">
     <div class="about-container">
       <div class="row">
-        <div class="row-left animated" :class="showAnimate? 'fadeInLeft': ''">
+        <div class="row-left animated" :class="showAboutAnimate? 'fadeInLeft': ''">
           <img src="../../assets/images/about1.jpg" alt="">
           <img src="../../assets/images/about2.jpg" alt="">
         </div>
         <div class="row-right">
-          <div class="animated row-right-container" :class="showAnimate? 'fadeInRight': ''">
+          <div class="animated row-right-container" :class="showAboutAnimate? 'fadeInRight': ''">
             <h1>关于我</h1>
             <h3>ABOUT ME</h3>
             <p>bdcjkasbckasnxksanakxnkas</p>
@@ -21,7 +21,7 @@
 <script>
   export default {
     name: 'about',
-    props: ['showAnimate']
+    props: ['showAboutAnimate']
   };
 </script>
 

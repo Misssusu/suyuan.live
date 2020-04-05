@@ -1,5 +1,5 @@
 <template>
-  <div class="skills" id="skills">
+  <div class="animated skills" :class="showSkillsAnimate? 'fadeInDown': ''" id="skills">
     <div class="skills-left">
       <h2>Personal Skills</h2>
       <p>PC端：熟练使用HTML/CSS技术，精通javascript/jquery编程，能够熟练使用angularjs等前端MVC框架进行模块开发。</p>
@@ -18,7 +18,7 @@
         <span>90%</span>
       </div>
       <div class="progress">
-        <div class="progressBar"></div>
+        <div class="progressBar" style="width: 90%"></div>
       </div>
       <div class="progress-title">
         <strong>Vue、Angular</strong>
@@ -39,14 +39,15 @@
         <span>75%</span>
       </div>
       <div class="progress">
-        <div class="progressBar"></div>
+        <div class="progressBar" style="width: 75%"></div>
       </div>
     </div>
   </div>
 </template>
 <script>
   export default {
-    name: 'skills'
+    name: 'skills',
+    props: ['showSkillsAnimate']
   }
 </script>
 <style lang="scss">
@@ -61,6 +62,7 @@
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    opacity: 0;
     .skills-left {
       width: 50%;
       padding: 0 15px;
