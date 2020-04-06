@@ -28,6 +28,7 @@
 </script>
 <style lang="scss" scoped>
   .navBar {
+    width: 100%;
     padding: 0 15px;
     position: fixed;
     background: #ffffff;
@@ -35,6 +36,7 @@
     z-index: 1;
     transition: all 0.4s ease-in-out;
     box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
+    box-sizing: border-box;
     nav {
       ul {
         display: flex;
@@ -61,20 +63,20 @@
   }
 
 
-  @media (min-width: 768px) {
-    .navBar {
-      width: 750px;
-    }
-  }
-  @media (min-width: 992px) {
-    .navBar {
-      width: 970px;
-    }
-  }
-  @media (min-width: 1200px) {
-    .navBar {
-      width: 1170px;
-    }
-  }
+  /*@media (min-width: 768px) {*/
+  /*  .navBar {*/
+  /*    width: 750px;*/
+  /*  }*/
+  /*}*/
+  /*@media (min-width: 992px) {*/
+  /*  .navBar {*/
+  /*    width: 970px;*/
+  /*  }*/
+  /*}*/
+  /*@media (min-width: 1200px) {*/
+  /*  .navBar {*/
+  /*    width: 1170px;*/
+  /*  }*/
+  /*}*/
 </style>
 

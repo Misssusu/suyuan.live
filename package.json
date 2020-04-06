@@ -63,8 +63,9 @@
       "postcss-cssnext": {},
       "postcss-px-to-viewport": {
         "viewportWidth": 1200,
-        "unitPrecision": 3,
+        "unitPrecision": 13,
         "viewportUnit": "vw",
+        "fontViewportUnit": "vw",
         "selectorBlackList": [
           ".ignore",
           ".hairlines"

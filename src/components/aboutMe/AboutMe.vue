@@ -91,7 +91,7 @@
 
   @media (min-width: 768px) {
     .about-container {
-      width: 750px;
+      width: 910px;
     }
     .row-right, .row-left {
       width: 100%;

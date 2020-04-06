@@ -60,12 +60,11 @@
     border-left: 4px solid #a4c639;
     padding: 40px 20px 40px 20px;
     box-sizing: border-box;
-    display: flex;
-    align-items: center;
     opacity: 0;
     .skills-left {
       width: 50%;
       padding: 0 15px;
+      box-sizing: border-box;
       h2 {
         font-size: 40px;
         padding-bottom: 30px;
@@ -77,6 +76,8 @@
     }
     .skills-right {
       width: 50%;
+      padding: 0 15px;
+      box-sizing: border-box;
       .progress-title {
         margin-bottom: 4px;
         strong {
@@ -99,6 +100,27 @@
           transition: width .6s ease;
           background: #a4c639;
         }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .skills {
+      display: block;
+      margin: 0 auto;
+      .skills-left,.skills-right {
+        width: 100%;
+      }
+      .skills-right {
+        margin-top: 40px;
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    .skills {
+      display: flex;
+      align-items: center;
+      .skills-left,.skills-right {
+        width: 50%;
       }
     }
   }
