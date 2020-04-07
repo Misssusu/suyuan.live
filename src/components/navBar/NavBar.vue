@@ -2,11 +2,11 @@
   <div class="navBar animated" :class="showNav? 'fadeInDown': ''">
     <div class="navBar-container">
       <nav class="navBar-header">
-        <button>
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+          <button class="navBar-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
       </nav>
       <nav class="navBar-collapse">
         <ul>
@@ -66,13 +66,41 @@
         }
       }
     }
+    .navBar-header {
+      margin: 0 -48px;
+      box-sizing: border-box;
+      .navBar-toggle {
+        border: 0;
+        padding: 32px;
+        background: transparent;
+        margin: 26px 48px 26px 0;
+        position: relative;
+        float: right;
+        span {
+          display: block;
+          width: 71px;
+          height: 6.5px;
+          background: #a4c639;
+          margin-top: 13px;
+          border-radius: 1px;
+        }
+      }
+    }
   }
-  .navBar.showNav {
-    opacity: 1;
-  }
+
   @media (max-width: 640px) { //宽度小于等于640px
     .navBar-container {
       width: 98%;
+      .navBar-header {
+        height: 52px;
+      }
+      .navBar-collapse {
+        border-top: 1px solid #e7e7e7;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+        max-height: 340px;
+        margin: 0 -15px;
+        padding: 0 15px;
+      }
     }
     .navBar .navBar-collapse {
       ul {
