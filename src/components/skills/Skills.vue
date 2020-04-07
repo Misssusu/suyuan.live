@@ -81,7 +81,6 @@
       .progress-title {
         margin-bottom: 4px;
         strong {
-          font-size: 16px;
           margin-bottom: 8px;
         }
         span {
@@ -107,6 +106,7 @@
     .skills {
       display: block;
       margin: 0 auto;
+      width: 750px;
       .skills-left,.skills-right {
         width: 100%;
       }
@@ -119,9 +119,15 @@
     .skills {
       display: flex;
       align-items: center;
+      width: 970px;
       .skills-left,.skills-right {
         width: 50%;
       }
+    }
+  }
+  @media (min-width: 1200px) {
+    .skills {
+      width: 1170px;
     }
   }
 </style>

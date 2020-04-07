@@ -2,9 +2,9 @@
   <div class="about" id="about">
     <div class="about-container">
       <div class="row">
-        <div class="row-left animated" :class="showAboutAnimate? 'fadeInLeft': ''">
-          <img src="../../assets/images/about1.jpg" alt="">
-          <img src="../../assets/images/about2.jpg" alt="">
+        <div class="row-left">
+          <img src="../../assets/images/about1.jpg" class="row-left-top animated" :class="showAboutAnimate? 'fadeIn': ''" alt="">
+          <img src="../../assets/images/about2.jpg" class="row-left-bottom animated" :class="showAboutAnimate? 'fadeInUp': ''" alt="">
         </div>
         <div class="row-right">
           <div class="animated row-right-container" :class="showAboutAnimate? 'fadeInRight': ''">
@@ -46,23 +46,32 @@
     display: flex;
     justify-content: center;
     margin: 0 15px;
+    width: 100%;
 
     .row-left {
       padding: 0 15px;
-      opacity: 0;
 
       img {
         width: 100%;
         vertical-align: middle;
       }
 
-      img:first-child {
+      .row-left-top {
         padding-bottom: 16px;
+        opacity: 0;
+      }
+      .row-left-top.animated, .row-left-bottom.animated {
+        webkit-animation-duration: 2s;
+        animation-duration: 2s;
+      }
+      .row-left-bottom {
+        opacity: 0;
       }
     }
     .row-right {
       display: flex;
       align-items: center;
+      padding: 0 15px;
 
       .row-right-container {
         opacity: 0;
@@ -91,10 +100,13 @@
 
   @media (min-width: 768px) {
     .about-container {
-      width: 910px;
+      width: 750px;
     }
     .row-right, .row-left {
       width: 100%;
+    }
+    .row-right {
+      margin-top: 100px;
     }
     .row {
       display: block;

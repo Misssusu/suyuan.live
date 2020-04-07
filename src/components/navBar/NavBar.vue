@@ -1,5 +1,5 @@
 <template>
-  <div class="navBar" :class="showNav? 'showNav': ''">
+  <div class="navBar animated" :class="showNav? 'fadeInDown': ''">
     <nav>
       <ul>
         <li>
@@ -42,7 +42,6 @@
         display: flex;
         justify-content: flex-end;
         li {
-          padding: 15px 0;
           a:hover {
             color: #a4c639;
             background-color: transparent;
@@ -52,7 +51,8 @@
             color: #202020;
             font-weight: 700;
             line-height: 38px;
-            padding: 0 20px;
+            padding: 12px 16px;
+            display: block;
           }
         }
       }
