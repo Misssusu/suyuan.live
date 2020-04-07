@@ -45,12 +45,12 @@
   .row {
     display: flex;
     justify-content: center;
-    margin: 0 15px;
+    /*margin: 0 15px;*/
     width: 100%;
 
     .row-left {
       padding: 0 15px;
-
+      box-sizing: border-box;
       img {
         width: 100%;
         vertical-align: middle;
@@ -72,6 +72,7 @@
       display: flex;
       align-items: center;
       padding: 0 15px;
+      box-sizing: border-box;
 
       .row-right-container {
         opacity: 0;
@@ -98,7 +99,22 @@
     }
   }
 
-  @media (min-width: 768px) {
+  @media (max-width: 640px) {   //宽度小于等于640px
+    .about-container {
+      width: 98%;
+    }
+    .row-right, .row-left {
+      width: 100%;
+    }
+    .row-right {
+      margin-top: 80px;
+    }
+    .row {
+      display: block;
+    }
+  }
+
+  @media (min-width: 768px){   //宽度大于等于768px
     .about-container {
       width: 750px;
     }
@@ -119,6 +135,9 @@
     }
     .row-right, .row-left {
       width: 41.66666667%;
+    }
+    .row-right {
+      margin-top: 0;
     }
     .row {
       display: flex;
