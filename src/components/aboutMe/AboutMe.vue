@@ -25,7 +25,7 @@
   };
 </script>
 
-<style scoped lang="scss">
+<style scoped>
   .about {
     padding: 80px 0;
   }
@@ -36,70 +36,64 @@
     box-sizing: border-box;
   }
 
-  .clearfix:after {
-    content: '';
-    clear: both;
-    display: block;
-  }
-
   .row {
     display: flex;
     justify-content: center;
     /*margin: 0 15px;*/
     width: 100%;
-
-    .row-left {
-      padding: 0 15px;
-      box-sizing: border-box;
-      img {
-        width: 100%;
-        vertical-align: middle;
-      }
-
-      .row-left-top {
-        padding-bottom: 16px;
-        opacity: 0;
-      }
-      .row-left-top.animated, .row-left-bottom.animated {
-        webkit-animation-duration: 2s;
-        animation-duration: 2s;
-      }
-      .row-left-bottom {
-        opacity: 0;
-      }
-    }
-    .row-right {
-      display: flex;
-      align-items: center;
-      padding: 0 15px;
-      box-sizing: border-box;
-
-      .row-right-container {
-        opacity: 0;
-        height: 300px;
-        width: 100%;
-        background: #ffffff;
-        border-right: 4px solid #a4c639;
-        box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
-        padding: 60px;
-        text-align: left;
-        h1 {
-          font-weight: bold;
-          font-size: 36px;
-          margin: 20px 0 10px 0;
-        }
-
-        h3 {
-          padding-bottom: 20px;
-          font-size: 24px;
-          font-weight: bold;
-          margin: 20px 0 10px 0;
-        }
-      }
-    }
   }
 
-  @media (max-width: 640px) {   //宽度小于等于640px
+  .row-left {
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  .row-left > img {
+    width: 100%;
+    vertical-align: middle;
+  }
+
+  .row-left-top {
+    padding-bottom: 16px;
+    opacity: 0;
+  }
+  .row-left-top.animated, .row-left-bottom.animated {
+    webkit-animation-duration: 2s;
+    animation-duration: 2s;
+  }
+  .row-left-bottom {
+    opacity: 0;
+  }
+  .row-right {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  .row-right-container {
+    opacity: 0;
+    height: 300px;
+    width: 100%;
+    background: #ffffff;
+    border-right: 4px solid #a4c639;
+    box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
+    padding: 60px;
+    text-align: left;
+  }
+  h1 {
+    font-weight: bold;
+    font-size: 36px;
+    margin: 20px 0 10px 0;
+  }
+
+  h3 {
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+  }
+
+  @media screen and (max-width: 640px) {
+    /*宽度小于等于640px*/
     .about-container {
       width: 98%;
     }
@@ -114,7 +108,8 @@
     }
   }
 
-  @media (min-width: 768px){   //宽度大于等于768px
+  @media (min-width: 768px){
+    /*宽度大于等于768px*/
     .about-container {
       width: 750px;
     }

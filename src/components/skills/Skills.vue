@@ -50,7 +50,7 @@
     props: ['showSkillsAnimate']
   }
 </script>
-<style lang="scss">
+<style>
   .skills {
     width: 95%;
     margin: 0 auto;
@@ -66,53 +66,53 @@
     width: 50%;
     padding: 0 15px;
     box-sizing: border-box;
-    h2 {
-      font-size: 40px;
-      padding-bottom: 30px;
-      font-weight: bold;
-    }
-    p {
-      margin: 0 0 10px;
-    }
+  }
+  h2 {
+    font-size: 40px;
+    padding-bottom: 30px;
+    font-weight: bold;
+  }
+  p {
+    margin: 0 0 10px;
   }
   .skills-right {
     width: 50%;
     padding: 0 15px;
     box-sizing: border-box;
-    .progress-title {
-      margin-bottom: 4px;
-      strong {
-        margin-bottom: 8px;
-      }
-      span {
-        float: right;
-        font-weight: bold;
-      }
-    }
-    .progress {
-      background: #f5f5f5;
-      margin-bottom: 20px;
-      height: 4px;
-      border-radius: 30px;
-      .progressBar {
-        width: 80%;
-        height: 100%;
-        transition: width .6s ease;
-        background: #a4c639;
-      }
-    }
+  }
+  .progress-title {
+    margin-bottom: 4px;
+  }
+  strong {
+    margin-bottom: 8px;
+  }
+  span {
+    float: right;
+    font-weight: bold;
+  }
+  .progress {
+    background: #f5f5f5;
+    margin-bottom: 20px;
+    height: 4px;
+    border-radius: 30px;
+  }
+  .progressBar {
+    width: 80%;
+    height: 100%;
+    transition: width .6s ease;
+    background: #a4c639;
   }
   @media (min-width: 768px) {
     .skills {
       display: block;
       margin: 0 auto;
       width: 750px;
-      .skills-left,.skills-right {
-        width: 100%;
-      }
-      .skills-right {
-        margin-top: 40px;
-      }
+    }
+    .skills-left,.skills-right {
+      width: 100%;
+    }
+    .skills-right {
+      margin-top: 40px;
     }
   }
   @media (min-width: 992px) {
@@ -120,9 +120,9 @@
       display: flex;
       align-items: center;
       width: 970px;
-      .skills-left,.skills-right {
-        width: 50%;
-      }
+    }
+    .skills-left,.skills-right {
+      width: 50%;
     }
   }
   @media (min-width: 1200px) {
