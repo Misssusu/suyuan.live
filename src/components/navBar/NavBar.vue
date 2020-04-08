@@ -2,13 +2,13 @@
   <div class="navBar animated" :class="showNav? 'fadeInDown': ''">
     <div class="navBar-container">
       <nav class="navBar-header">
-          <button class="navBar-toggle">
+          <button class="navBar-toggle" @click="navToggle">
             <span></span>
             <span></span>
             <span></span>
           </button>
       </nav>
-      <nav class="navBar-collapse">
+      <nav class="navBar-collapse" v-show="showNavCollapse">
         <ul>
           <li>
             <a @click="$emit('scrollTo','home')">Home</a>
@@ -32,7 +32,17 @@
     name: 'navbar',
     props: [
       'showNav'
-    ]
+    ],
+    data(){
+      return {
+        showNavCollapse: false
+      }
+    },
+    methods: {
+      navToggle(){
+        this.showNavCollapse = !this.showNavCollapse;
+      }
+    }
   }
 </script>
 <style lang="scss" scoped>
@@ -76,6 +86,7 @@
         margin: 26px 48px 26px 0;
         position: relative;
         float: right;
+        outline: none;     //消除默认点击蓝色边框效果
         span {
           display: block;
           width: 71px;

@@ -10,7 +10,7 @@
   "dependencies": {
     "animate.css": "^3.7.2",
     "core-js": "^3.6.4",
-    "element-ui": "^2.13.0",
+    "normalize.css": "^8.0.1",
     "vue": "^2.6.11",
     "vue-router": "^3.1.5"
   },
@@ -23,7 +23,6 @@
     "cssnano-preset-advanced": "^4.0.7",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.1.2",
-    "node-sass": "^4.12.0",
     "postcss-aspect-ratio-mini": "^1.0.1",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^12.0.1",
@@ -62,8 +61,9 @@
       },
       "postcss-cssnext": {},
       "postcss-px-to-viewport": {
-        "viewportWidth": 1200,
-        "unitPrecision": 13,
+        "viewportWidth": 375,
+        "viewportHeight": 667,
+        "unitPrecision": 3,
         "viewportUnit": "vw",
         "fontViewportUnit": "vw",
         "selectorBlackList": [
