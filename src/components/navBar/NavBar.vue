@@ -3,9 +3,9 @@
     <div class="navBar-container">
       <nav class="navBar-header">
           <button class="navBar-toggle" @click="navToggle">
-            <span></span>
-            <span></span>
-            <span></span>
+            <div class="navBar-icon"></div>
+            <div class="navBar-icon"></div>
+            <div class="navBar-icon"></div>
           </button>
       </nav>
       <nav class="navBar-collapse" v-show="showNavCollapse">
@@ -50,16 +50,14 @@
     width: 100%;
     padding: 0 15px;
     position: fixed;
+    top: 0;
     background: #ffffff;
     opacity: 0;
     z-index: 1;
     transition: all 0.4s ease-in-out;
-    box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
+    box-shadow: 0 2Px 8Px 0 rgba(50, 50, 50, 0.08);
     box-sizing: border-box;
-  }
-  ul {
-    display: flex;
-    justify-content: flex-end;
+    min-height: 50Px;
   }
   li > a:hover {
     color: #a4c639;
@@ -70,59 +68,67 @@
     color: #202020;
     font-weight: 700;
     line-height: 38px;
-    padding: 12px 16px;
+    display: block;
+    /*去除a标签在手机端点击时的默认阴影样式*/
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+  .navBar-container {
+    width: 98%;
+  }
+  .navBar-collapse {
+    border-top: 1px solid #e7e7e7;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    max-height: 340Px;
+    margin: 0 -15Px;
+    padding: 0 15Px;
+    text-align: left;
+  }
+  .navBar .navBar-collapse > ul {
     display: block;
   }
+  li > a {
+    padding: 20Px 15Px;
+  }
   .navBar-header {
-    margin: 0 -48px;
+    margin: 0 -15px;
     box-sizing: border-box;
+    height: 49Px;
   }
   .navBar-toggle {
     border: 0;
-    padding: 32px;
+    padding: 10Px;
     background: transparent;
-    margin: 26px 48px 26px 0;
+    margin: 8Px 15Px 8Px 0;
     position: relative;
     float: right;
     /*消除默认点击蓝色边框效果*/
     outline: none;
   }
-  span {
-    display: block;
-    width: 71px;
-    height: 6.5px;
+  .navBar-icon {
+    width: 26Px;
+    height: 2Px;
     background: #a4c639;
-    margin-top: 13px;
-    border-radius: 1px;
+    margin-top: 5Px;
+    border-radius: 1Px;
   }
-
-  @media (max-width: 640px) {
-    /*宽度小于等于640px*/
-    .navBar-container {
-      width: 98%;
-    }
-    .navBar-header {
-      height: 52px;
-    }
-    .navBar-collapse {
-      border-top: 1px solid #e7e7e7;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
-      max-height: 340px;
-      margin: 0 -15px;
-      padding: 0 15px;
-    }
-    .navBar .navBar-collapse > ul {
-        display: block;
-    }
-    li > a {
-      padding: 20px 15px;
-    }
+  .navBar-icon:first-child {
+    margin-top: 0;
   }
 
   @media (min-width: 768px){
     /*宽度大于等于768px*/
     .navBar-container {
-      width: 750px;
+      width: 750Px;
+    }
+    .navBar-header {
+      display: none;
+    }
+    .navBar-collapse {
+      display: block !important;
+    }
+    ul {
+      display: flex;
+      justify-content: flex-end;
     }
   }
 
@@ -130,12 +136,30 @@
     .navBar-container {
       width: 970px;
     }
+    .navBar-header {
+      display: none;
+    }
+    .navBar-collapse {
+      display: block !important;
+    }
+    ul {
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 
   @media (min-width: 1200px) {
     .navBar-container {
       width: 1170px;
     }
+    .navBar-header {
+      display: none;
+    }
+    ul {
+      display: flex;
+      justify-content: flex-end;
+    }
   }
+
 </style>
 

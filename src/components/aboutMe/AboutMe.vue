@@ -34,11 +34,12 @@
     padding: 0 15px;
     margin: 0 auto;
     box-sizing: border-box;
+    width: 98%;
   }
 
   .row {
-    display: flex;
-    justify-content: center;
+    /*display: flex;*/
+    /*justify-content: center;*/
     /*margin: 0 15px;*/
     width: 100%;
   }
@@ -46,6 +47,10 @@
   .row-left {
     padding: 0 15px;
     box-sizing: border-box;
+    width: 100%;
+  }
+  .row-right {
+    width: 100%;
   }
   .row-left > img {
     width: 100%;
@@ -68,6 +73,7 @@
     align-items: center;
     padding: 0 15px;
     box-sizing: border-box;
+    margin-top: 100px;
   }
   .row-right-container {
     opacity: 0;
@@ -92,21 +98,21 @@
     margin: 20px 0 10px 0;
   }
 
-  @media screen and (max-width: 640px) {
-    /*宽度小于等于640px*/
-    .about-container {
-      width: 98%;
-    }
-    .row-right, .row-left {
-      width: 100%;
-    }
-    .row-right {
-      margin-top: 80px;
-    }
-    .row {
-      display: block;
-    }
-  }
+  /*@media screen and (max-width: 640px) {*/
+  /*  !*宽度小于等于640px*!*/
+  /*  .about-container {*/
+  /*    width: 98%;*/
+  /*  }*/
+  /*  .row-right, .row-left {*/
+  /*    width: 100%;*/
+  /*  }*/
+  /*  .row-right {*/
+  /*    margin-top: 80px;*/
+  /*  }*/
+  /*  .row {*/
+  /*    display: block;*/
+  /*  }*/
+  /*}*/
 
   @media (min-width: 768px){
     /*宽度大于等于768px*/
@@ -136,6 +142,7 @@
     }
     .row {
       display: flex;
+      justify-content: center;
     }
   }
 
@@ -144,4 +151,6 @@
       width: 1170px;
     }
   }
+
+
 </style>
