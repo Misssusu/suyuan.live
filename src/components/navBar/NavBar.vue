@@ -8,7 +8,7 @@
             <div class="navBar-icon"></div>
           </button>
       </nav>
-      <nav class="navBar-collapse" v-show="showNavCollapse">
+      <nav class="navBar-collapse animated fadeIn" v-show="showNavCollapse">
         <ul>
           <li>
             <a @click="$emit('scrollTo','home')">Home</a>
@@ -31,7 +31,8 @@
   export default {
     name: 'navbar',
     props: [
-      'showNav'
+      'showNav',
+      'showNavCollapseProp'
     ],
     data(){
       return {
@@ -76,12 +77,13 @@
     width: 98%;
   }
   .navBar-collapse {
-    border-top: 1px solid #e7e7e7;
     box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    border-top: 1px solid #e7e7e7;
     max-height: 340Px;
     margin: 0 -15Px;
     padding: 0 15Px;
     text-align: left;
+    opacity: 0;
   }
   .navBar .navBar-collapse > ul {
     display: block;
@@ -90,7 +92,7 @@
     padding: 20Px 15Px;
   }
   .navBar-header {
-    margin: 0 -15px;
+    margin: 0 -15Px;
     box-sizing: border-box;
     height: 49Px;
   }
@@ -121,23 +123,24 @@
       width: 750Px;
     }
     .navBar-header {
-      display: none;
+      display: none !important;
     }
     .navBar-collapse {
       display: block !important;
     }
-    ul {
+    .navBar .navBar-collapse > ul {
       display: flex;
       justify-content: flex-end;
     }
   }
 
   @media (min-width: 992px) {
+    /*宽度大于等于992px*/
     .navBar-container {
       width: 970px;
     }
     .navBar-header {
-      display: none;
+      display: none !important;
     }
     .navBar-collapse {
       display: block !important;
@@ -153,7 +156,7 @@
       width: 1170px;
     }
     .navBar-header {
-      display: none;
+      display: none !important;
     }
     ul {
       display: flex;
