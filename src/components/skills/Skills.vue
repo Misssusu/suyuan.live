@@ -119,9 +119,6 @@
     .skills-left,.skills-right {
       width: 100%;
     }
-    .skills-right {
-      margin-top: 40Px;
-    }
   }
   @media (min-width: 992px) {
     .skills {

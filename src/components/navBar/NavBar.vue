@@ -74,6 +74,7 @@
   }
   .navBar-container {
     width: 98%;
+    margin: 0 auto;
   }
   .navBar-collapse {
     box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
@@ -89,6 +90,7 @@
   }
   li > a {
     padding: 20Px 15Px;
+    font-size: 16Px;
   }
   .navBar-header {
     margin: 0 -15Px;
