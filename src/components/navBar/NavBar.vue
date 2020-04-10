@@ -31,12 +31,11 @@
   export default {
     name: 'navbar',
     props: [
-      'showNav',
-      'showNavCollapseProp'
+      'showNav'
     ],
     data(){
       return {
-        showNavCollapse: false
+        showNavCollapse: false,
       }
     },
     methods: {
@@ -137,7 +136,7 @@
   @media (min-width: 992px) {
     /*宽度大于等于992px*/
     .navBar-container {
-      width: 970px;
+      width: 970Px;
     }
     .navBar-header {
       display: none !important;
@@ -153,7 +152,7 @@
 
   @media (min-width: 1200px) {
     .navBar-container {
-      width: 1170px;
+      width: 1170Px;
     }
     .navBar-header {
       display: none !important;

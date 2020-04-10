@@ -17,6 +17,7 @@
     -moz-osx-font-smoothing: grayscale;
     color: #333;
     font-size: 14Px;
+    line-height: 1.42857143;
     overflow-x: hidden;
     box-sizing: border-box;
   }

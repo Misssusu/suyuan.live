@@ -31,21 +31,19 @@
   }
 
   .about-container {
-    padding: 0 15px;
+    padding: 0 15Px;
     margin: 0 auto;
     box-sizing: border-box;
-    width: 98%;
   }
 
   .row {
     /*display: flex;*/
     /*justify-content: center;*/
-    /*margin: 0 15px;*/
-    width: 100%;
+    margin: 0 -15Px;
   }
 
   .row-left {
-    padding: 0 15px;
+    padding: 0 15Px;
     box-sizing: border-box;
     width: 100%;
   }
@@ -71,7 +69,7 @@
   .row-right {
     display: flex;
     align-items: center;
-    padding: 0 15px;
+    /*padding: 0 15px;*/
     box-sizing: border-box;
     margin-top: 100px;
   }
@@ -80,22 +78,28 @@
     height: 300px;
     width: 100%;
     background: #ffffff;
-    border-right: 4px solid #a4c639;
-    box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
-    padding: 60px;
+    border-right: 4Px solid #a4c639;
+    box-shadow: 0 2Px 8Px 0 rgba(50, 50, 50, 0.08);
+    padding: 60Px;
     text-align: left;
   }
   h1 {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 36Px;
     margin: 20px 0 10px 0;
   }
 
   h3 {
     padding-bottom: 20px;
-    font-size: 24px;
+    font-size: 24Px;
     font-weight: bold;
     margin: 20px 0 10px 0;
+  }
+
+  p {
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 10Px;
   }
 
   /*@media screen and (max-width: 640px) {*/
@@ -114,16 +118,26 @@
   /*  }*/
   /*}*/
 
+  @media (max-width: 480px) {
+    /*宽度小于等于480px*/
+    h3 {
+      font-size: 18Px;
+    }
+    h2 {
+      font-size: 20Px;
+    }
+  }
+
   @media (min-width: 768px){
     /*宽度大于等于768px*/
     .about-container {
-      width: 750px;
+      width: 750Px;
     }
     .row-right, .row-left {
       width: 100%;
     }
     .row-right {
-      margin-top: 100px;
+      margin-top: 100Px;
     }
     .row {
       display: block;
@@ -132,7 +146,7 @@
 
   @media (min-width: 992px) {
     .about-container {
-      width: 970px;
+      width: 970Px;
     }
     .row-right, .row-left {
       width: 41.66666667%;
@@ -148,7 +162,7 @@
 
   @media (min-width: 1200px) {
     .about-container {
-      width: 1170px;
+      width: 1170Px;
     }
   }
 

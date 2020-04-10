@@ -50,41 +50,41 @@
     props: ['showSkillsAnimate']
   }
 </script>
-<style>
+<style scoped>
   .skills {
-    width: 95%;
-    margin: 0 auto;
+    margin: 30Px auto 0 auto;
     background: #ffffff;
     -webkit-box-shadow: 0 0 8px 0 rgba(50, 50, 50, 0.08);
-    box-shadow: 0 0 8px 0 rgba(50, 50, 50, 0.08);
-    border-left: 4px solid #a4c639;
-    padding: 40px 20px 40px 20px;
+    box-shadow: 0 0 8Px 0 rgba(50, 50, 50, 0.08);
+    border-left: 4Px solid #a4c639;
+    padding: 40Px 20Px 40Px 20Px;
     box-sizing: border-box;
     opacity: 0;
   }
   .skills-left {
-    width: 50%;
-    padding: 0 15px;
+    padding: 0 15Px;
     box-sizing: border-box;
   }
   h2 {
-    font-size: 40px;
-    padding-bottom: 30px;
+    font-size: 40Px;
+    padding-bottom: 30Px;
     font-weight: bold;
   }
   p {
-    margin: 0 0 10px;
+    margin: 0 0 10Px;
   }
   .skills-right {
-    width: 50%;
-    padding: 0 15px;
+    padding: 40Px 15Px 0 15Px;
     box-sizing: border-box;
   }
   .progress-title {
     margin-bottom: 4px;
   }
   strong {
-    margin-bottom: 8px;
+    margin-bottom: 4Px;
+    font-weight: 700;
+    font-size: 16Px;
+    display: inline-block;
   }
   span {
     float: right;
@@ -92,9 +92,9 @@
   }
   .progress {
     background: #f5f5f5;
-    margin-bottom: 20px;
-    height: 4px;
-    border-radius: 30px;
+    margin-bottom: 20Px;
+    height: 4Px;
+    border-radius: 30Px;
   }
   .progressBar {
     width: 80%;
@@ -102,24 +102,32 @@
     transition: width .6s ease;
     background: #a4c639;
   }
+
+  @media (max-width: 480px) {
+    /*宽度小于等于480px*/
+    h2 {
+      font-size: 25Px;
+    }
+  }
+
   @media (min-width: 768px) {
     .skills {
       display: block;
-      margin: 0 auto;
-      width: 750px;
+      width: 750Px;
+      margin: 80Px auto 0 auto;
     }
     .skills-left,.skills-right {
       width: 100%;
     }
     .skills-right {
-      margin-top: 40px;
+      margin-top: 40Px;
     }
   }
   @media (min-width: 992px) {
     .skills {
       display: flex;
       align-items: center;
-      width: 970px;
+      width: 970Px;
     }
     .skills-left,.skills-right {
       width: 50%;
@@ -127,7 +135,7 @@
   }
   @media (min-width: 1200px) {
     .skills {
-      width: 1170px;
+      width: 1170Px;
     }
   }
 </style>
