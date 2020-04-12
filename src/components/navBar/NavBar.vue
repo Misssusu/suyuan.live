@@ -69,8 +69,6 @@
     font-weight: 700;
     line-height: 38px;
     display: block;
-    /*去除a标签在手机端点击时的默认阴影样式*/
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
   }
   .navBar-container {
     width: 98%;
