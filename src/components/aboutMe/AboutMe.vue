@@ -102,22 +102,6 @@
     margin-bottom: 10Px;
   }
 
-  /*@media screen and (max-width: 640px) {*/
-  /*  !*宽度小于等于640px*!*/
-  /*  .about-container {*/
-  /*    width: 98%;*/
-  /*  }*/
-  /*  .row-right, .row-left {*/
-  /*    width: 100%;*/
-  /*  }*/
-  /*  .row-right {*/
-  /*    margin-top: 80px;*/
-  /*  }*/
-  /*  .row {*/
-  /*    display: block;*/
-  /*  }*/
-  /*}*/
-
   @media (max-width: 480px) {
     /*宽度小于等于480px*/
     h3 {
