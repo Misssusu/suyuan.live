@@ -9,7 +9,7 @@
           <a href="https://suyuan.live/drawingBoard/"><img src="@/assets/images/canvas.png" alt=""></a>
         </div>
         <div class="works-col-3">
-          <a href="https://suyuan.live/blog-client-preview/index.html#/"><img src="@/assets/images/blog.png" alt=""></a>
+          <a href="https://suyuan.live/blog-client-preview/index.html#/"><img src="@/assets/images/canvas.png" alt=""></a>
         </div>
       </div>
       <div class="works-col-bottom">
@@ -17,7 +17,7 @@
           <a href=""><img src="@/assets/images/canvas.png" alt=""></a>
         </div>
         <div class="works-col-3">
-          <a href="https://suyuan.live/blog-client-preview/index.html#/"><img src="@/assets/images/blog.png" alt=""></a>
+          <a href="https://suyuan.live/blog-client-preview/index.html#/"><img src="@/assets/images/canvas.png" alt=""></a>
         </div>
       </div>
     </div>
@@ -28,12 +28,13 @@
     name: "myWorks"
   }
 </script>
-<style>
+<style scoped>
   .works {
-    padding: 0 15Px;
     box-sizing: border-box;
     background: #fff;
-    margin-top: 40Px;
+    margin-top: 60Px;
+    box-shadow: 0 0 8Px 0 rgba(50, 50, 50, 0.08);
+    padding: 40Px 20Px 40Px 20Px;
   }
   .works-container {
     width: 100%;
@@ -44,7 +45,7 @@
   }
   .works-title {
     margin-bottom: 30Px;
-    padding: 30Px 0;
+    /*padding: 30Px 0;*/
   }
   .works-title > h2 {
     font-size: 40Px;
@@ -57,7 +58,7 @@
   .works-col-3 a img {
     width: 100%;
     height: auto;
-    border-radius: 20Px;
+    border-radius: 10Px;
   }
 
 
@@ -65,6 +66,10 @@
     /*宽度大于等于768px*/
     .works-container {
       width: 750Px;
+    }
+    .works {
+      width: 970Px;
+      margin: 100Px auto 0 auto;
     }
     .works-col-bottom,.works-col-top {
       display: flex;

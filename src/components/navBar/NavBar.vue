@@ -17,7 +17,7 @@
             <a  @click="$emit('scrollTo','about')">About</a>
           </li>
           <li>
-            <a href="#my works">My Works</a>
+            <a @click="$emit('scrollTo','works')">My Works</a>
           </li>
           <li>
             <a href="#blog">Blog</a>
