@@ -52,6 +52,11 @@
   }
   .blog-item {
     padding: 12Px;
+    opacity: 0;
+  }
+  .blog-item.animated {
+    webkit-animation-duration: 1.8s;
+    animation-duration: 1.8s;
   }
   .blog .blog-item:not(:last-of-type) {
     border-bottom: 1Px solid #e8e8e8;
