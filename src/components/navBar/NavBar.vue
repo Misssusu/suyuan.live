@@ -17,10 +17,10 @@
             <a  @click="$emit('scrollTo','about')">About</a>
           </li>
           <li>
-            <a @click="$emit('scrollTo','works')">My Works</a>
+            <a @click="$emit('scrollTo','blog')">Blog</a>
           </li>
           <li>
-            <a href="#blog">Blog</a>
+            <a @click="$emit('scrollTo','works')">My Works</a>
           </li>
         </ul>
       </nav>

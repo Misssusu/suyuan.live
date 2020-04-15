@@ -3,10 +3,10 @@
     <div class="blog-title">
       <h2>Blog</h2>
     </div>
-    <div class="blog-item" v-for="item in blogs" :key="item.id">
+    <div class="blog-item animated" :class="showBlogAnimate? 'fadeInRight': ''" v-for="item in blogs" :key="item.id">
       <div class="blog-item-row">
         <div class="blog-item-left">
-          <a :href="item.link" class="item-title">{{item.title}}</a>
+          <a :href="item.link" target="_blank" class="item-title">{{item.title}}</a>
           <p class="item-description">{{item.description}}</p>
         </div>
         <div class="blog-item-right">
@@ -15,7 +15,7 @@
       </div>
     </div>
     <p class="tip">
-      <a href="https://www.jianshu.com/u/7a15cbb4a8f3">点击查看更多博客</a>
+      <a target="_blank" href="https://www.jianshu.com/u/7a15cbb4a8f3">点击查看更多博客</a>
     </p>
   </div>
 </template>
@@ -23,6 +23,7 @@
   import vueImgSrc from '../../assets/images/vue.png';
   export default {
     name: "Blog",
+    props: ['showBlogAnimate'],
     data(){
       return {
         blogs: [
@@ -39,7 +40,7 @@
   .blog {
     margin: 60Px auto 0 auto;
     background: #ffffff;
-    border-left: 4px solid #a4c639;
+    border-left: 4Px solid #a4c639;
     padding: 13Px;
     box-sizing: border-box;
     box-shadow: 0 2Px 8Px 0 rgba(50, 50, 50, 0.08);

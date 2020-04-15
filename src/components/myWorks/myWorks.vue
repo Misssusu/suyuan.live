@@ -68,7 +68,6 @@
       width: 750Px;
     }
     .works {
-      width: 970Px;
       margin: 100Px auto 0 auto;
     }
     .works-col-bottom,.works-col-top {
