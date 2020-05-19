@@ -21,6 +21,10 @@
 </template>
 <script>
   import vueImgSrc from '../../assets/images/vue.png';
+  import eventloopImgSrc from '../../assets/images/eventloop.png';
+  import cssCenterImgSrc from '../../assets/images/cssCenter.png';
+  import commandImgSrc from '../../assets/images/command.png';
+
   export default {
     name: "Blog",
     props: ['showBlogAnimate'],
@@ -28,9 +32,9 @@
       return {
         blogs: [
           { id: 1, title : "[Vue]组件之间如何通信？", description: "组件通信可以大致分为两种情况，父子组件之间的通信和非父子组件之间的通信，下面来分别介绍 一、父子组件之间的通信 1. props (父组件通过 ...", link : "https://www.jianshu.com/p/4ebdac615ec9", img: `${vueImgSrc}`},
-          { id: 2, title : "[Vue]组件之间如何通信？", description: "组件通信可以大致分为两种情况，父子组件之间的通信和非父子组件之间的通信，下面来分别介绍 一、父子组件之间的通信 1. props (父组件通过 ...", link : "https://www.jianshu.com/p/4ebdac615ec9", img: `${vueImgSrc}`},
-          { id: 3, title : "[Vue]组件之间如何通信？", description: "组件通信可以大致分为两种情况，父子组件之间的通信和非父子组件之间的通信，下面来分别介绍 一、父子组件之间的通信 1. props (父组件通过 ...", link : "https://www.jianshu.com/p/4ebdac615ec9", img: `${vueImgSrc}`},
-          { id: 4, title : "[Vue]组件之间如何通信？", description: "组件通信可以大致分为两种情况，父子组件之间的通信和非父子组件之间的通信，下面来分别介绍 一、父子组件之间的通信 1. props (父组件通过 ...", link : "https://www.jianshu.com/p/4ebdac615ec9", img: `${vueImgSrc}`}
+          { id: 2, title : "[JavaScript]之 Event Loop", description: "在讲 Event Loop 前先看一段代码，思考他的输出内容是什么 答案是： 不要提前偷看呀！ 如果你答错了，就继续往下看叭~，答对了也看看(万...", link : "https://www.jianshu.com/p/346ba0fe129b", img: `${eventloopImgSrc}`},
+          { id: 3, title : "[CSS]之居中篇", description: "一、垂直居中 1.内联元素 给内联元素的上下加上相等的padding。HTML代码 CSS样式 效果图 2.块级元素中的文字垂直居中 将元素的...", link : "https://www.jianshu.com/p/8ba1a322a739", img: `${cssCenterImgSrc}`},
+          { id: 4, title : "一些常用命令行", description: "cd命令 cd documents切换到documents目录下 cd ..切换到上级目录中 cd ./path*切换到当前目录下的path目录...", link : "https://www.jianshu.com/p/ac646980fa4b", img: `${commandImgSrc}`}
         ]
       }
     }

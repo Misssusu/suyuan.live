@@ -10,7 +10,7 @@
           <div class="animated row-right-container" :class="showAboutAnimate? 'fadeInRight': ''">
             <h1>关于我</h1>
             <h3>ABOUT ME</h3>
-            <p>bdcjkasbckasnxksanakxnkas</p>
+            <p>热爱生活更热爱我的工作，听说代码是一门失传已久的"艺术"，这门艺术叫做思考，我一直在追寻"艺术"的道路上一去不复返!</p>
           </div>
         </div>
       </div>

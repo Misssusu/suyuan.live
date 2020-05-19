@@ -2,8 +2,8 @@
   <div class="animated skills" :class="showSkillsAnimate? 'fadeInDown': ''" id="skills">
     <div class="skills-left">
       <h2>Personal Skills</h2>
-      <p>PC端：熟练使用HTML/CSS技术，精通javascript/jquery编程，能够熟练使用angularjs等前端MVC框架进行模块开发。</p>
-      <p>移动端：熟练使用HBuilder、touch.js、swiper、jquery.fullPage.js等移动框架进行移动页面的开发。了解3D效果和H5游戏的开发。</p>
+      <p>具有三年的前端开发经验</p>
+      <p></p>
     </div>
     <div class="skills-right">
       <div class="progress-title">

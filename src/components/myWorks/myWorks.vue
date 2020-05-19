@@ -9,15 +9,15 @@
           <a href="https://suyuan.live/drawingBoard/"><img src="@/assets/images/canvas.png" alt=""></a>
         </div>
         <div class="works-col-3">
-          <a href="https://suyuan.live/blog-client-preview/index.html#/"><img src="@/assets/images/canvas.png" alt=""></a>
+          <a href="https://suyuan.live/simple-style-ui-doc-preview/index.html"><img src="@/assets/images/simple-style-ui.png" alt=""></a>
         </div>
       </div>
       <div class="works-col-bottom animated" :class="showWorksAnimate? 'fadeIn': ''">
         <div class="works-col-3">
-          <a href=""><img src="@/assets/images/canvas.png" alt=""></a>
+          <a href=""><img src="@/assets/images/focus.jpg" alt=""></a>
         </div>
         <div class="works-col-3">
-          <a href="https://suyuan.live/blog-client-preview/index.html#/"><img src="@/assets/images/canvas.png" alt=""></a>
+          <a href="https://misssusu.github.io/blog-client-preview/index.html"><img src="@/assets/images/blog1.png" alt=""></a>
         </div>
       </div>
     </div>
